@@ -1,0 +1,249 @@
+:root {
+    --header-blue: #0ea5e9;
+    --primary-blue: #0ea5e9;
+    --light-blue: #dbeafe;
+    --background-color: #e0f2fe;
+    --white-color: white;
+    --black-color: black;
+    --yellow-border: #fde047;
+    --primary-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 200px 1fr;
+    min-height: 100vh;
+    /* min-width: 98vw; */
+}
+
+.header {
+    /* border: solid 2px red; */
+    /* position: sticky; */
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: 2fr 3fr;
+    padding: 10px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+div input {
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 5px;
+    height: 1.5rem;
+}
+
+#searchBar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 1rem;
+}
+
+#userName {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding-left: 80px;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: auto 4fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    padding-left: 1rem;
+    font-weight: bold;
+
+}
+
+#intro img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    grid-row: span 2;
+}
+
+#intro div {
+    padding-left: 1rem;
+}
+
+#intro:first-child {
+    align-self: end;
+}
+
+#intro #userTag {
+    font-size: 1.5rem;
+}
+
+.header #buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding-right: 1rem;
+}
+
+.header button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--primary-blue);
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.headerIcon {
+    width: 1.5rem;
+    height: auto;
+}
+
+.userIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    /* design info for sidebar to fit into page */
+    grid-column: 1/2;
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: 100px 300px 1fr;
+    gap: 20px;
+    padding-left: 20px;
+    background-color: var(--primary-blue);
+    color: var(--white-color);
+}
+
+div #settings {
+    display: grid;
+    grid-template-rows: repeat(3, 1.5rem) 5fr;
+}
+
+div #menu,
+#links,
+#settings {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+#links,
+#settings {
+    font-size: 1.25rem;
+    /* gap: 20px; */
+}
+
+#links {
+    grid-template-rows: repeat(6, 1.5rem);
+}
+
+.linkName {
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.linkName:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar img {
+    filter: invert(100%);
+}
+
+.sidebarGridItemIcon {
+    width: 24px;
+    /* Adjust based on desired icon size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.mainContent {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    background-color: var(--background-color);
+}
+
+.mainContentProjectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 30px repeat(3, 200px);
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.mainContentProjectGrid h2,
+.mainContentSidebarItems h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+.projects {
+    width: 300px;
+    border-left: solid var(--yellow-border) 10px;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+}
+
+.projects:hover {
+    border-left: solid var(--yellow-border) 15px;
+}
+
+#mainContentSidebar {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.mainContentSidebarItems {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#sideBarAnnouncements {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 30px 1fr;
+    /* background-color: white; */
+}
+
+.individualAnnouncements {
+    border-radius: 10px;
+    gap: 1rem;
+    padding: 1rem;
+    border: solid 1px black;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+}
+
+#sidebarTrending {
+    display: grid;
+    gap: 2px;
+    grid-template-rows: repeat(4, 1fr);
+}

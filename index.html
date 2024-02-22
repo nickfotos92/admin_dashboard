@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headerSection" id="searchBar">
+                <img class="headerIcon" src="imgs/magnify.svg" alt="magnify icon">
+                <input type="search">
+            </div>
+            <div class="headerSection" id="userName">
+                <img class="headerIcon" src="imgs/bell-ring.svg" alt="bell icon">
+                <img class="userIcon" src="imgs/puppy.jpeg" alt="user icon">
+                <div class="userName"><strong>John Doe</strong></div>
+            </div>
+            <div class="headerSection" id="intro">
+                <img class="headerIcon" src="imgs/puppy.jpeg" alt="bell icon">
+                <div>Hello there,</div>
+                <div id="userTag">John Doe (@johndoe)</div>
+            </div>
+            <div class="headerSection" id="buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebarGridItem" id="menu">
+                <img src="imgs/menu.svg" alt="Menu" class="sidebarGridItemIcon">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="sidebarGridItem" id="links">
+                <img src="imgs/home.svg" alt="Home Icon" class="sidebarGridItemIcon">
+                <div class="linkName">Home</div>
+                <img src="imgs/card-account-details-outline.svg" alt="Profile Icon" class="sidebarGridItemIcon">
+                <div class="linkName">Profile</div>
+                <img src="imgs/message.svg" alt="Message Icon" class="sidebarGridItemIcon">
+                <div class="linkName">Messages</div>
+                <img src="imgs/clock.svg" alt="History Icon" class="sidebarGridItemIcon">
+                <div class="linkName">History</div>
+                <img src="imgs/note-multiple-outline.svg" alt="Tasks Icon" class="sidebarGridItemIcon">
+                <div class="linkName">Tasks</div>
+                <img src="imgs/account-group-outline.svg" alt="Communities Icon" class="sidebarGridItemIcon">
+                <div class="linkName">Communities</div>
+            </div>
+            <div class="sidebarGridItem" id="settings">
+                <img src="imgs/cog-outline.svg" alt="Settings Icon" class="sidebarGridItemIcon">
+                <div class="linkName">Settings</div>
+                <img src="imgs/help-box.svg" alt="Support Icon" class="sidebarGridItemIcon">
+                <div class="linkName">Support</div>
+                <img src="imgs/check-decagram.svg" alt="Privacy Icon" class="sidebarGridItemIcon">
+                <div class="linkName">Privacy</div>
+            </div>
+        </div>
+
+        <div class="mainContent">
+            <div class="mainContentProjectGrid" id="projectSection">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <h3>Super Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem adipisci veritatis corrupti
+                        vitae sequi modi. Totam minus ipsum excepturi nulla nostrum similique. Rem voluptatibus
+                        reprehenderit.</p>
+                </div>
+                <div class="projects">
+                    <h3>Less Cool Project</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam officiis eveniet aut!
+                        Sunt expedita, quam iure adipisci mollitia accusamus minus laboriosam.</p>
+                </div>
+                <div class="projects">
+                    <h3>Impossible App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam officiis eveniet aut!
+                        Sunt expedita, quam iure adipisci mollitia accusamus minus laboriosam.</p>
+                </div>
+                <div class="projects">
+                    <h3>Easy Peasy App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam officiis eveniet aut!
+                        Sunt expedita, quam iure adipisci mollitia accusamus.</p>
+                </div>
+                <div class="projects">
+                    <h3>Ad Blocker</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam officiis eveniet aut!
+                        Sunt expedita, quam iure adipisc./p>
+                </div>
+                <div class="projects">
+                    <h3>Money Maker</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam officiis eveniet aut!
+                        Sunt expedita, quam iure adipisci mollitia accusamus minus laboriosam similique quaerat .</p>
+                </div>
+            </div>
+            <div class="mainContentGridItem" id="mainContentSidebar">
+                <div class="mainContentSidebarItems" id="sideBarAnnouncements">
+
+                    <h2>Announcements</h2>
+                    <div class="individualAnnouncements">
+                        <div class="announcements">
+                            <h4>Site Maintenance</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing
+                                elit. </p>
+                        </div>
+                        <div class="announcements">
+                            <h4>Community Share Day</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae quidem
+                                dignissimos!</p>
+                        </div>
+                        <div class="announcements">
+                            <h4>Deep Fried Lasagna</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae./p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainContentSidebarItems" id="sidebarTrending">
+                    <h2>Trending</h2>
+                    <div class="trending">
+                        <h5>@samwisethebrave</h5>
+                        <p>A Really Nice Garden.</p>
+                    </div>
+                    <div class="trending">
+                        <h5>@brandybuck</h5>
+                        <p>Fourteenth Breakfast</p>
+                    </div>
+                    <div class="trending">
+                        <h5>@mrfrodo</h5>
+                        <p>A Pot of Tea.</p>
+                    </div>
+                    <div class="trending">
+                        <h5>@gollum</h5>
+                        <p>A Pile of Bones.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
